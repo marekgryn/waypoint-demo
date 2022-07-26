@@ -7,11 +7,13 @@ app "example-nodejs" {
   }
 
   build {
-#    use "pack" {}
-    use "docker" {
-      buildkit           = false
-      disable_entrypoint = false
+    use "pack" {
+      disable_entrypoint = true
     }
+#    use "docker" {
+#      buildkit           = false
+#      disable_entrypoint = false
+#    }
     registry {
       use "aws-ecr" {
         region     = "eu-west-2"
