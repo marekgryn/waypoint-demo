@@ -19,12 +19,14 @@ app "example-nodejs" {
 
   deploy {
     use "kubernetes" {
+      namespace = "waypoint-demo"
       probe_path = "/"
     }
   }
 
   release {
     use "kubernetes" {
+      namespace = "waypoint-demo"
       port = 80
       ingress "http" {
         annotations = {
