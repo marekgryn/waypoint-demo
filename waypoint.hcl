@@ -17,7 +17,7 @@ app "example-nodejs" {
       use "aws-ecr" {
         region     = "eu-west-2"
         repository = "mg-waypoint"
-        tag        = "latest"
+        tag        = gitrefpretty()
       }
     }
   }
