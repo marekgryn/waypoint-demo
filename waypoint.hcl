@@ -8,7 +8,6 @@ app "example-nodejs" {
 
   build {
     use "pack" {}
-
 #    use "docker" {
 #      buildkit           = false
 #      disable_entrypoint = false
