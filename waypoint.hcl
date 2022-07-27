@@ -7,9 +7,7 @@ app "example-nodejs" {
   }
 
   build {
-    use "pack" {
-      disable_entrypoint = true
-    }
+    use "pack" {}
 
 #    use "docker" {
 #      buildkit           = false
